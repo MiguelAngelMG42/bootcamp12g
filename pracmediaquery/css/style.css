@@ -1,0 +1,14 @@
+div{
+    width:100px;
+    height:100px;
+    border:1px solid red;
+    margin:10px auto;
+    display: flex;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    border:1px solid black;
+
+}

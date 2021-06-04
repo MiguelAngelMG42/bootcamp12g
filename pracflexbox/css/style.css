@@ -1,0 +1,37 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+main{
+    border: 1px solid black;
+    background: cyan;
+    padding: 1rem;
+}
+
+body{
+    padding: 2rem;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-flex{
+    padding: 1rem;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.anchor-flex{
+    border-right: 1px solid black;
+    padding-right: 0.5rem;
+}

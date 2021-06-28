@@ -1,0 +1,38 @@
+let promedio = (array,materia) => {
+    let suma =0 ;
+    let iterador = 0;
+    array.forEach(element => {
+        element.scores.forEach(value=> {
+            if(materia == value.signature){
+                iterador++;
+                suma+=value.score;
+            }
+        })
+    });
+
+    return suma/iterador;
+}
+
+let promedioMentor = (array,mentor) => {
+    let suma =0 ;
+    let iterador = 0;
+    array.forEach(element => {
+        debugger
+        if(mentor === element.name){
+            element.scores.forEach(value=> {                
+                    iterador++;
+                    suma+=value.score;                
+            })
+        }
+        
+    });
+
+    return suma/iterador;
+}
+
+let isra = promedioMentor(mentorsArray,"Michael Villalba Sotelo");
+console.log(isra);
+let html = promedio(mentorsArray,"HTML");
+let css = promedio(mentorsArray,"CSS");
+let js = promedio(mentorsArray,"JS");
+let react = promedio(mentorsArray,"ReactJS");

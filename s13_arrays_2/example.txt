@@ -1,0 +1,38 @@
+let dataArray = [
+      [
+          "Israel",
+          "Salinas Martínez"
+      ],
+      [
+          "David",
+          "Cermeño Moranchel"
+      ],
+      [
+          "Charles",
+          "Silva"
+      ],
+      [
+          "Michael",
+          "Villalba Sotelo"
+      ]
+  ]
+
+  /* mentorsArray = [
+      {
+          name:"Israel",
+          lastName:"salinas"
+      }...{...}
+  ]*/
+----------------------------------
+Yo le intente con map y con clases ,  para que le den una checada
+class Mentor {
+  constructor(name, lastName) {
+    this.name = name;
+    this.lastName = lastName;
+  }
+};
+
+const parsePersons = (dataArray) => {
+  let mentors = dataArray.map(([ name, lastName ]) => new Mentor(name, lastName));
+  return { mentorsArray: mentors } ;
+};

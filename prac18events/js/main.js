@@ -24,7 +24,7 @@ save.addEventListener("click", () => {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             const respuesta = JSON.parse(xhttp.responseText);
-            //console.log(respuesta)
+            console.log(respuesta)
             console.log("hola desde el servidor")
             //console.log(respuesta.name)
             //return respuesta
@@ -89,3 +89,4 @@ save.addEventListener("click", () => {
      
 
 })
+

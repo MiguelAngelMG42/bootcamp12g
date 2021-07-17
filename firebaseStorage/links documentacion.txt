@@ -1,0 +1,22 @@
+var database = firebase.database();
+
+https://firebase.google.com/docs/database/web/start?authuser=0
+
+https://firebase.google.com/docs/database/web/read-and-write?authuser=0
+
+https://firebase.google.com/docs/web/setup#from-the-cdn_1
+
+
+// Because it is shared with Google App Engine, this will also make
+// files uploaded via GAE public.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write;
+    }
+  }
+}
+
+https://firebase.google.com/docs/storage/web/upload-files
+
+
